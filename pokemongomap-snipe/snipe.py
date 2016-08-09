@@ -1,6 +1,5 @@
 import requests
 import json
-import pprint
 import os
 import time
 
