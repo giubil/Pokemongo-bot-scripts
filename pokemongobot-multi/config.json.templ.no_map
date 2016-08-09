@@ -1,0 +1,181 @@
+{
+    "auth_service": "ptc",
+    "username": "TEMPL_USERNAME",
+    "password": "TEMPL_PASSWORD",
+    "location": "Central Park, New York",
+    "gmapkey": "YOUR-GMAP-API",
+    "tasks": [
+    {
+      "type": "HandleSoftBan"
+    },
+    {
+      "type": "CollectLevelUpReward"
+    },
+    {
+      "type": "IncubateEggs",
+      "config": {
+        "longer_eggs_first": true
+      }
+    },
+    {
+      "type": "TransferPokemon"
+    },
+    {
+      "type": "EvolvePokemon",
+      "config": {
+        "evolve_all": "none",
+        "first_evolve_by": "cp",
+        "evolve_cp_min": 300,
+        "evolve_speed": 20,
+        "use_lucky_egg": false
+      }
+    },
+    {
+      "type": "RecycleItems",
+      "config": {
+        "item_filter": {
+          "1": { "keep" : 20 },
+          "2": { "keep" : 30 },
+          "3": { "keep" : 60 },
+          "101": { "keep" : 0 },
+          "102": { "keep" : 0 },
+          "103": { "keep" : 15 },
+          "104": { "keep" : 25 },
+          "201": { "keep" : 10 },
+          "202": { "keep" : 15 },
+          "701": { "keep" : 50 },
+          "801": { "keep" : 50 }
+        }
+      }
+    },
+    {
+      "type": "CatchVisiblePokemon"
+    },
+    {
+      "type": "CatchLuredPokemon"
+    },
+    {
+      "type": "SpinFort"
+    },
+    {
+      "type": "MoveToFort",
+      "config": {
+        "lure_attraction": true,
+        "lure_max_distance": 2000
+      }
+    }
+  ],
+  "map_object_cache_time": 5,
+  "forts": {
+    "avoid_circles": true,
+    "max_circle_size": 50
+  },
+  "websocket_server": false,
+  "walk": 80,
+  "action_wait_min": 1,
+  "action_wait_max": 4,
+  "debug": false,
+  "test": false,
+  "health_record": true,
+  "location_cache": true,
+  "distance_unit": "km",
+  "reconnecting_timeout": 1,
+  "evolve_captured": "NONE",
+  "catch_randomize_reticle_factor": 1.0,
+  "catch_randomize_spin_factor": 1.0,
+  "catch": {
+    "any": {"catch_above_cp": 0, "catch_above_iv": 0, "logic": "or" },
+    "// Pokemons with example": { "always_catch": true },
+    "// Gets filtered with release parameters": {},
+    "// Legendary pokemons (Goes under S-Tier)": {},
+    "Lapras": { "always_catch": true },
+    "Moltres": { "always_catch": true },
+    "Zapdos": { "always_catch": true },
+    "Articuno": { "always_catch": true },
+    "// S-Tier pokemons (if pokemon can be evolved into tier, list the representative)": {},
+    "Mewtwo": { "always_catch": true },
+    "Dragonite": { "always_catch": true },
+    "Snorlax": { "always_catch": true },
+    "// Mew evolves to Mewtwo": {},
+    "Mew": { "always_catch": true },
+    "Arcanine": { "always_catch": true },
+    "Vaporeon": { "always_catch": true },
+    "Gyarados": { "always_catch": true },
+    "Exeggutor": { "always_catch": true },
+    "Muk": { "always_catch": true },
+    "Weezing": { "always_catch": true },
+    "Flareon": { "always_catch": true },
+    "// Growlithe evolves to Arcanine": {},
+    "Growlithe": { "always_catch": true },
+    "// Dragonair evolves to Dragonite": {},
+    "Dragonair": { "always_catch": true },
+    "// Grimer evolves to Muk": {},
+    "Grimer": { "always_catch": true },
+    "// Magikarp evolves to Gyarados": {},
+    "Magikarp": { "always_catch": true },
+    "// Exeggcute evolves to Exeggutor": {},
+    "Exeggcute": { "always_catch": true },
+    "// Eevee evolves to many versions, like Vaporeon, Flareon": {},
+    "Eevee": { "always_catch": true },
+    "// A-Tier pokemons": {},
+    "Slowbro": { "always_catch": true },
+    "Victreebel": { "always_catch": true },
+    "Machamp": { "always_catch": true },
+    "Poliwrath": { "always_catch": true },
+    "Clefable": { "always_catch": true },
+    "Nidoking": { "always_catch": true },
+    "Venusaur": { "always_catch": true },
+    "Charizard": { "always_catch": true },
+    "Golduck": { "always_catch": true },
+    "Nidoqueen": { "always_catch": true },
+    "Vileplume": { "always_catch": true },
+    "Blastoise": { "always_catch": true },
+    "Omastar":  { "always_catch": true },
+    "Aerodactyl": { "always_catch": true },
+    "Golem": { "always_catch": true },
+    "Wigglytuff": { "always_catch": true },
+    "Dewgong": { "always_catch": true },
+    "Ninetales": { "always_catch": true },
+    "Magmar": { "always_catch": true },
+    "Kabutops": { "always_catch": true },
+    "Electabuzz": { "always_catch": true },
+    "Starmie": { "always_catch": true },
+    "Jolteon": { "always_catch": true },
+    "Rapidash": { "always_catch": true },
+    "Pinsir": { "always_catch": true },
+    "Scyther": { "always_catch": true },
+    "Tentacruel": { "always_catch": true },
+    "Gengar": { "always_catch": true },
+    "Hypno": { "always_catch": true },
+    "Pidgeot": { "always_catch": true },
+    "Rhydon": { "always_catch": true },
+    "Seaking": { "always_catch": true },
+    "Kangaskhan": { "always_catch": true }
+  },
+  "release": {
+    "any": {"keep_best_cp":1, "keep_best_iv":1 },
+    "Eevee": {"keep_best_iv":2 },
+    "Dratini": {"keep_best_cp":3, "keep_best_iv":2}
+  },
+  "vips" : {
+    "Any pokemon put here directly force to use Berry & Best Ball to capture, to secure the capture rate!": {},
+    "any": {"catch_above_cp": 1200, "catch_above_iv": 0.9, "logic": "or" },
+    "Lapras": {},
+    "Moltres": {},
+    "Zapdos": {},
+    "Articuno": {},
+    "// S-Tier pokemons (if pokemon can be evolved into tier, list the representative)": {},
+    "Mewtwo": {},
+    "Dragonite": {},
+    "Snorlax": {},
+    "// Mew evolves to Mewtwo": {},
+    "Mew": {},
+    "Arcanine": {},
+    "Vaporeon": {},
+    "Gyarados": {},
+    "Exeggutor": {},
+    "Muk": {},
+    "Weezing": {},
+    "Flareon": {}
+  }
+}
