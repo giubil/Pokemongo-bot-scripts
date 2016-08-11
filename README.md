@@ -63,4 +63,4 @@ To print the log of a container, just do `docker logs -f YOUR-CONTAINER-NAME`
 
 # Contribution
 
-Thanks to @terbolous for his help on the snipe.py code, and in the reverse engineering of the rarespawn.be API
+Thanks to [@terbolous](https://github.com/terbolous) for his help on the snipe.py code, and in the reverse engineering of the rarespawn.be API
