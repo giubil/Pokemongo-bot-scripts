@@ -41,7 +41,7 @@ Go into the pokemongobot-multi folder. Open the docker_creation.py file, and edi
 
 If you want to run those container linked to a pokemongo-map for sniping, replace `YOUR-MAP-CONTAINER-NAME` with the name of the container running your pokemongo-map (if you followed the docs when building the image, it should be `pogomap`). Then replace the `YOUR-IMAGE-NAME` by the name of the pokemongo-bot image name (if you have followed the docs when building the image, it should be `pokemongo-bot`).
 
-Then open the config.json.templ.map file. This is template config file, that I use to run my bots, and you can adjust it as your liking as long as you keep the `TEMPL_USERNAME` and `TEMPL_PASSWORD` required for the script to work. Put your GMap api key in here at the same time. Replace the `YOUR-MAP-CONTAINER-NAME` line 63 by the name of the container running your pokemongo-map. Then copy this file to config.json.templ (`cp config.json.templ.map config.json.templ').
+Then open the config.json.templ.map file. This is template config file, that I use to run my bots, and you can adjust it as your liking as long as you keep the `TEMPL_USERNAME` and `TEMPL_PASSWORD` required for the script to work. Put your GMap api key in here at the same time. Replace the `YOUR-MAP-CONTAINER-NAME` line 63 by the name of the container running your pokemongo-map. Then copy this file to config.json.templ (`cp config.json.templ.map config.json.templ`).
 
 ### Run without the pokemongo-map linked
 
