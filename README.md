@@ -60,3 +60,7 @@ ACCOUNT_NAME PASSWORD\n
 Then all you have to do is `python docker_creation.py` and you should be all set.
 
 To print the log of a container, just do `docker logs -f YOUR-CONTAINER-NAME`
+
+# Contribution
+
+Thanks to @terbolous for his help on the snipe.py code, and in the reverse engineering of the rarespawn.be API
